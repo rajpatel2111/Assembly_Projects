@@ -1,0 +1,24 @@
+
+1)
+less than    blt $s1, $s2, Label
+
+	slt $s0, $s1, $s2
+	bne $s0, $zero, Label
+
+2)
+less than or equal to   ble $s1, $s2, Label
+
+	slt $s0, $s1, $s2
+	beq $s0, $zero, Label
+
+3)
+greater than    bgt $s1, $s2, Label
+
+	slt $s0, $s1, $s2
+	bne $s0, $zero, Label
+
+4)
+great than or equal to    bge $s1, $s2, Label
+
+	slt $s0, $s1, $s2
+	beq $s0, $zero, Label
